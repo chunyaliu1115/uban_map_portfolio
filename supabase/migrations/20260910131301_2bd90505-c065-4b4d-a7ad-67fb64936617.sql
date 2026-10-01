@@ -1,0 +1,1 @@
+REVOKE EXECUTE ON FUNCTION public.set_comment_owner_flag() FROM PUBLIC, anon, authenticated;

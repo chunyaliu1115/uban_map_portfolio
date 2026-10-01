@@ -1,0 +1,1 @@
+CREATE POLICY "Only the site owner can edit comments" ON public.post_comments FOR UPDATE TO authenticated USING (has_role(auth.uid(), 'admin'::app_role)) WITH CHECK (has_role(auth.uid(), 'admin'::app_role));
